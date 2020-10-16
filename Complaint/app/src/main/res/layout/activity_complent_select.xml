@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".complentSelect">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="351dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/complentBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/spinnerback" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="309dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/nextbutton"
+        android:onClick="next"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/complentBox"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="338dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Enter a Description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
